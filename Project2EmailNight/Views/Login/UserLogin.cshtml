@@ -1,0 +1,20 @@
+﻿@model Project2EmailNight.Dtos.UserLoginDto
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <form method="post">
+        <br /><br />
+        <label>Kullanıcı Adınız</label>
+        <input type="text" class="form-control" asp-for="Username">
+        <br />
+        <label>Şifreniz</label>
+        <input type="text" class="form-control" required asp-for="Password">
+        <br />
+        <button class="btn btn-warning">Giriş Yap</button>
+    </form>
+</div>
